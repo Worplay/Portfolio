@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zgadnij Liczbę</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="game-container">
+            <h1>Zgadnij Liczbę!</h1>
+            <p>Wybierz liczbę od 1 do 100:</p>
+            <input type="number" id="guessInput" min="1" max="100" />
+            <button onclick="checkGuess()">Zgaduję!</button>
+            <p id="message"></p>
+            <button id="restartBtn" onclick="restartGame()">Zagraj ponownie</button>
+        </div>
+
+        <div class="history-container">
+            <h3>Poprzednie liczby:</h3>
+            <ul id="guessList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
